@@ -1,0 +1,1084 @@
+@font-face {
+  font-family: "General Sans";
+  src: url(/fonts/GeneralSans-Regular.woff2);
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(/fonts/Roboto\ Mono.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.template {
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.4rem;
+  background-color: white;
+  border-radius: 0rem 0.5rem 0rem 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  padding: 0.4rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+}
+.template img {
+  width: 1.3rem;
+}
+.template p {
+  font-family: "Roboto Mono";
+  font-size: 0.7rem;
+  color: #111111;
+}
+
+main {
+  width: 100%;
+  padding: 1.5rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .nav .left {
+  width: 18%;
+}
+main .nav .left img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .nav .links {
+  display: none;
+}
+main .nav .menu {
+  width: 22%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .nav .menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono";
+}
+main .nav .menu .logo {
+  width: 3rem;
+}
+main .nav .menu .logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-1 {
+  width: 100%;
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-1 .text {
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+}
+main .view-1 .text p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+  word-spacing: 0.2rem;
+}
+main .view-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-2 .top {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .view-2 .top img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .view-2 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-2 .bottom h1 {
+  font-size: 2.6em;
+  font-weight: 300;
+  line-height: 1;
+  font-family: "General Sans";
+  text-transform: uppercase;
+}
+main .view-2 .bottom p {
+  font-size: 1.2rem;
+  font-family: "Roboto Mono";
+  font-weight: 100;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+main .view-2 .bottom .services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  gap: 0.8em;
+}
+main .view-2 .bottom .services .service {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .view-2 .bottom .services .service p {
+  font-family: "General Sans";
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 1;
+}
+main .view-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+main .view-3 .top-img {
+  width: 100%;
+}
+main .view-3 .top-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-3 .bottom {
+  display: flex;
+  gap: 1rem;
+}
+main .view-3 .bottom p {
+  writing-mode: vertical-rl;
+  margin-top: 0.5em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+}
+main .view-3 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-3 .bottom .text h1 {
+  font-size: 3em;
+  font-family: "General Sans";
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+main .view-3 .bottom .text p {
+  writing-mode: initial;
+  font-size: 1.2rem;
+  word-spacing: 0.2rem;
+  line-height: 1.5;
+  opacity: 0.5;
+  text-transform: lowercase;
+}
+main .view-4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+main .view-4 .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-4 .top h1 {
+  font-size: 2.8rem;
+  font-family: "General Sans";
+  font-weight: 200;
+  text-transform: uppercase;
+}
+main .view-4 .top .card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+main .view-4 .top .card-container .card {
+  width: 100%;
+  border-top: 1px solid rgb(181, 174, 174);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-4 .top .card-container .card h2 {
+  font-size: 1.6rem;
+  font-family: "General Sans";
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+main .view-4 .top .card-container .card p {
+  font-size: 1rem;
+  font-family: "General Sans";
+  word-spacing: 0.2rem;
+  line-height: 1.5;
+  opacity: 0.6;
+  letter-spacing: 0.1rem;
+}
+main .view-4 .top .card-container .card .btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+main .view-4 .top .card-container .card .btn button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+main .view-4 .top .card-container .card .btn button i {
+  font-size: 1.3rem;
+  font-weight: 100;
+  opacity: 0.6;
+}
+main .view-4 .top .card-container .card .btn p {
+  font-size: 0.9rem;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+  opacity: 1;
+  font-weight: 300;
+}
+main .view-4 .bottom {
+  width: 100%;
+}
+main .view-4 .bottom img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-5 {
+  width: 100%;
+  border-top: 1px solid rgb(205, 200, 200);
+  margin-bottom: 1rem;
+}
+main .view-5 .select {
+  width: 100%;
+  margin-top: 4rem;
+}
+main .view-5 .select img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+main .view-6 .top {
+  width: 100%;
+}
+main .view-6 .top img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-6 .top .img2 {
+  display: none;
+}
+main .view-6 .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-6 .text h1 {
+  font-size: 2.5rem;
+  font-family: "General Sans";
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+main .view-6 .text p {
+  font-size: 1rem;
+  font-family: "Roboto Mono";
+  word-spacing: 0.2rem;
+  line-height: 1.5;
+}
+main .view-6 .text .btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .view-6 .text .btn button {
+  padding: 0.6rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+}
+main .view-6 .text .btn button i {
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+main .view-6 .text .btn p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+}
+main .view-7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+main .view-7 .top {
+  width: 100%;
+}
+main .view-7 .top img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-7 .top .img2 {
+  display: none;
+}
+main .view-7 .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-7 .text h1 {
+  font-size: 2.5rem;
+  font-family: "General Sans";
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+main .view-7 .text p {
+  font-size: 1rem;
+  font-family: "Roboto Mono";
+  word-spacing: 0.2rem;
+  line-height: 1.5;
+}
+main .view-7 .text .btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .view-7 .text .btn button {
+  padding: 0.6rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+}
+main .view-7 .text .btn button i {
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+main .view-7 .text .btn p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+}
+main .view-8 {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+main .view-8 .client {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+main .view-8 .client img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-8 .text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-8 .text-container .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgb(176, 166, 166);
+  padding-bottom: 2rem;
+}
+main .view-8 .text-container .text .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .view-8 .text-container .text .left p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-family: "Roboto Mono";
+}
+main .view-8 .text-container .text .left h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "General Sans";
+}
+main .view-8 .text-container .text .right p {
+  font-size: 0.8rem;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+}
+main .view-8 .text-container .last {
+  border-bottom: none;
+}
+main .view-9 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border-top: 1px solid rgb(176, 166, 166);
+  margin-bottom: 2rem;
+}
+main .view-9 .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+main .view-9 .top h1 {
+  font-size: 3rem;
+  font-family: "General Sans";
+  font-weight: 300;
+  text-transform: uppercase;
+}
+main .view-9 .top p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Roboto Mono";
+  line-height: 1.5;
+}
+main .view-9 .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+main .view-9 .cards .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-9 .cards .card h1 {
+  font-size: 1.5rem;
+  font-family: "General Sans";
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main .view-9 .cards .card .img {
+  width: 100%;
+}
+main .view-9 .cards .card .img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-9 .cards .card .logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .view-9 .cards .card .logo .left h2 {
+  font-size: 0.8rem;
+  font-family: "Roboto Mono";
+  font-weight: 300;
+  text-transform: uppercase;
+}
+main .view-9 .cards .card .logo .right i {
+  margin-left: 0.2rem;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+main .view-9 .cards .card .bottom {
+  margin-top: 1rem;
+}
+main .view-9 .cards .card .bottom p {
+  font-size: 1rem;
+  font-family: "Roboto Mono";
+  line-height: 1.5;
+  opacity: 0.5;
+}
+main .view-9 .bottom2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: 1px solid rgb(176, 166, 166);
+}
+main .view-9 .bottom2 p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+}
+main .view-9 .bottom2 h1 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-family: "General Sans";
+  font-weight: 300;
+  line-height: 1;
+}
+main .view-9 .bottom2 .btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+main .view-9 .bottom2 .btn button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+main .view-9 .bottom2 .btn button i {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+main .view-9 .bottom2 .btn p {
+  font-size: 0.9rem;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+  opacity: 1;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #111111;
+  color: white;
+  padding: 1.5rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+footer .footer-top .create {
+  width: 100%;
+}
+footer .footer-top .create img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .footer-top h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: "General Sans";
+  font-weight: 300;
+  line-height: 1.1;
+  text-align: center;
+}
+footer .footer-top button {
+  width: 11rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+footer .footer-top button p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+  font-weight: 100;
+}
+footer .footer-top button i {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+footer .footer-middle {
+  width: 100%;
+  border-top: 1px solid rgb(94, 92, 92);
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+footer .footer-middle .part-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .footer-middle .part-1 .erik {
+  width: 20%;
+}
+footer .footer-middle .part-1 .erik img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .footer-middle .part-1 .icon-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer-middle .part-1 .icon-container .icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer-middle .part-1 .icon-container .icon button {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 50%;
+}
+footer .footer-middle .part-1 .icon-container .icon button i {
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.7;
+}
+footer .footer-middle .part-1 .icon-container .icon p {
+  font-size: 0.8rem;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+}
+footer .footer-middle .part-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .footer-middle .part-2 h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "General Sans";
+  text-transform: uppercase;
+}
+footer .footer-middle .part-2 p {
+  font-size: 0.9rem;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+}
+footer .footer-middle .part-2 .btn {
+  width: 100%;
+}
+footer .footer-middle .part-2 .btn button {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 50px;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+footer .footer-middle .part-2 .btn button p {
+  font-size: 1rem;
+  font-family: "Roboto Mono";
+}
+footer .footer-middle .part-2 .btn button i {
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.8;
+}
+footer .footer-middle .part-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .footer-middle .part-3 h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "General Sans";
+  text-transform: uppercase;
+}
+footer .footer-middle .part-3 p {
+  font-size: 0.9rem;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+}
+footer .footer-middle .part-4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .footer-middle .part-4 h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "General Sans";
+  text-transform: uppercase;
+}
+footer .footer-middle .part-4 p {
+  font-size: 0.9rem;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+}
+footer .footer-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+footer .footer-bottom .top {
+  width: 100%;
+  text-align: center;
+}
+footer .footer-bottom .top p {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-family: "General Sans";
+  word-spacing: 0.2rem;
+  margin-top: 0.5rem;
+  opacity: 0.7;
+}
+footer .footer-bottom .top p span {
+  text-decoration: underline;
+}
+footer .footer-bottom .bottom {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 2rem;
+}
+footer .footer-bottom .bottom .btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer-bottom .bottom .btn p {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Roboto Mono";
+}
+footer .footer-bottom .bottom .btn button {
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+footer .footer-bottom .bottom .btn button i {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 4rem;
+    padding-top: 1.8rem;
+    gap: 2.5rem;
+  }
+  main .nav {
+    width: 100%;
+  }
+  main .nav .left {
+    width: 4%;
+    margin-right: 20%;
+  }
+  main .nav .links {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+  }
+  main .nav .links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 0.8em;
+    font-family: "Roboto Mono";
+  }
+  main .nav .links button {
+    width: 9rem;
+    height: 2.5rem;
+    padding: 0.3rem;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    font: 0.9rem "Roboto Mono";
+  }
+  main .nav .menu {
+    display: none;
+  }
+  main .view-2 {
+    flex-direction: row-reverse;
+    gap: 4rem;
+    margin-bottom: 2rem;
+  }
+  main .view-2 .bottom h1 {
+    padding-top: 1.8rem;
+    font-size: 5em;
+    letter-spacing: 0.05em;
+  }
+  main .view-2 .bottom p {
+    font-size: 1.4rem;
+  }
+  main .view-3 {
+    flex-direction: row;
+    gap: 4rem;
+    margin-bottom: 2rem;
+  }
+  main .view-3 .top-img {
+    width: 35%;
+  }
+  main .view-3 .bottom {
+    width: 65%;
+    flex-direction: row-reverse;
+  }
+  main .view-3 .bottom p {
+    margin-top: 4rem;
+  }
+  main .view-3 .bottom .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .view-3 .bottom .text h1 {
+    font-size: 5.7rem;
+    padding-top: 0.5em;
+  }
+  main .view-3 .bottom .text p {
+    font-size: 1.2rem;
+    width: 80%;
+    word-spacing: 0.1rem;
+    margin-bottom: 3rem;
+  }
+  main .view-4 {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  main .view-4 .top {
+    width: 50%;
+  }
+  main .view-4 .top h1 {
+    font-size: 6rem;
+    line-height: 1;
+    font-family: "General Sans";
+    margin-bottom: 2rem;
+  }
+  main .view-4 .top .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  main .view-4 .top .card-container .card {
+    gap: 0.8rem;
+  }
+  main .view-4 .bottom {
+    width: 50%;
+  }
+  main .view-4 .bottom img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view-5 {
+    margin-top: 2rem;
+  }
+  main .view-6 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .view-6 .top {
+    width: 32%;
+    display: flex;
+    gap: 2rem;
+  }
+  main .view-6 .top .img2 {
+    display: block;
+  }
+  main .view-6 .top img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view-6 .text {
+    width: 30%;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+  main .view-6 .text .top-text {
+    margin-top: 2rem;
+  }
+  main .view-6 .text .top-text h1 {
+    font-size: 4rem;
+  }
+  main .view-7 {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  main .view-7 .top {
+    width: 32%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+  main .view-7 .top .img2 {
+    display: block;
+  }
+  main .view-7 .top img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view-7 .text {
+    width: 30%;
+    justify-content: space-between;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+  }
+  main .view-7 .text .top-text {
+    margin-top: 2rem;
+  }
+  main .view-7 .text .top-text h1 {
+    font-size: 4rem;
+  }
+  main .view-8 {
+    padding-left: 30rem;
+    margin-bottom: 4rem;
+  }
+  main .view-8 .client {
+    width: 48%;
+    margin-left: 30rem;
+  }
+  main .view-8 .text-container .text {
+    flex-direction: row;
+    align-items: center;
+  }
+  main .view-8 .text-container .text .left {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  main .view-8 .text-container .text .left h2 {
+    font-size: 2rem;
+  }
+  main .view-8 .text-container .last {
+    border-bottom: none;
+  }
+  main .view-9 {
+    width: 100%;
+    gap: 3rem;
+  }
+  main .view-9 .top {
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+  main .view-9 .top h1 {
+    font-size: 8rem;
+    width: 50%;
+  }
+  main .view-9 .top p {
+    font-size: 1.3rem;
+    width: 50%;
+    margin-top: 4rem;
+    padding-left: 2rem;
+  }
+  main .view-9 .cards {
+    width: 100%;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  main .view-9 .bottom2 {
+    margin-top: 4rem;
+    width: 50%;
+    margin-left: 45rem;
+    margin-bottom: 4rem;
+  }
+  main .view-9 .bottom2 p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  main .view-9 .bottom2 h1 {
+    font-size: 4rem;
+  }
+  footer {
+    padding: 4rem;
+    padding-top: 8rem;
+  }
+  footer .footer-top {
+    gap: 2rem;
+    margin-bottom: 9rem;
+  }
+  footer .footer-top h1 {
+    width: 70%;
+    font-size: 4rem;
+  }
+  footer .footer-middle {
+    flex-direction: row;
+  }
+  footer .footer-middle .part-1 {
+    justify-content: space-between;
+  }
+  footer .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .footer-bottom .top {
+    text-align: left;
+    width: 60%;
+  }
+}
